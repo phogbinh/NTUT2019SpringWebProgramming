@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/GamePlays.css">
+    <link rel="stylesheet" type="text/css" href="../Code/main/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../Code/main/css/style.css">
+    <title>GamePlays</title>
+</head>
+<body>
+    <header>
+        <div class="fake-nav"></div>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg pb-navbar-dark fixed-top">
+            <div class="container">
+
+                <!-- 
+                    ~ This is the navigation bar for Mobile view in RWD
+                    -->
+                <a class="navbar-brand col-auto" href="../Code/main/index.html">
+                    <img class="img-fluid" src="../Code/main/images/img_logo.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuItems" aria-controls="menuItems" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <!-- 
+                    ~ This is the navigation bar for Desktop view in RWD
+                    ~ indicated by the classes 'collapse' and 'navbar-collapse'
+                -->
+                <div class="collapse navbar-collapse" id="menuItems">
+                    <ul class="navbar-nav ml-auto">
+
+                        <!--
+                            ~ 'navbarDropdown' is not defined in Bootstrap
+                        -->
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="container">
+                                    <div class="row no-gutters">
+                                        <div class="col-lg-4">
+                                            <a href="../html/Overview.html">
+                                                <div class="dropdown-menu-items">
+                                                    <h1>Overview</h1>
+                                                    <div class="dropdown-menu-horizontal-line"></div>
+                                                    <p>What is Brawlhalla ?</p>
+                                                    <img class="img-fluid" src="../Code/main/images/img_about_dropdown_menu_overview.png" alt="Overview">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <a href="../html/Developer.html">
+                                                <div class="dropdown-menu-items">
+                                                    <h1>Dev Team</h1>
+                                                    <div class="dropdown-menu-horizontal-line"></div>
+                                                    <p>Learn about the creator of the game and the web.</p>
+                                                    <img class="img-fluid" src="../Code/main/images/img_about_dropdown_menu_devTeam.png" alt="Dev Team">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <a href="../html/License.html">
+                                                <div class="dropdown-menu-items">
+                                                    <h1>License</h1>
+                                                    <div class="dropdown-menu-horizontal-line"></div>
+                                                    <p>The attached software licence of Brawlhalla</p>
+                                                    <img class="img-fluid" src="../Code/main/images/img_about_dropdown_menu_licence.png" alt="Licence">
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <div class="verticle-line"></div>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/GamePlays.html">Game Plays</a>
+                        </li>
+
+                        <div class="verticle-line"></div>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/Legend.html">Legends</a>
+                        </li>
+
+                        <div class="verticle-line"></div>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/PlayNow.html">Play Now</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="main-header">
+            <h1>GamePlays Video</h1>
+        </div>
+        <div class="main-border">
+            <div class="main-video" >
+                <video src="../video/videomain.mp4" controls width=100%></video>
+            </div>
+            <br>
+            <br>
+            <div class="main-sub-border">
+                <div class="main-sub-video">
+                    <video class="sub-video" src="../video/video1.mp4" controls width=auto height=auto></video>
+                    <div class="line"></div>
+                    <video class="sub-video" src="../video/video2.mp4" controls width=auto height=auto></video>
+                </div>
+                <div class="line-hrz"></div>
+                <div class="main-sub-video">
+                    <video class="sub-video" src="../video/video3.mp4" controls width=auto height=auto></video>
+                    <div class="line"></div>
+                    <video class="sub-video" src="../video/videomagan.mp4" controls width=auto height=auto></video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-3"></div>
+                    <div class="col-6 footer-container">
+                        <div class="row no-gutters">
+                            <div class="col-lg-4 col-md-6 description-list-items">
+                                <ul>
+                                    <li>
+                                        <a href="../html/Menu.html">
+                                            <h3>About</h3>
+                                        </a>
+                                    </li>
+                                    <li><a href="../html/Overview.html">Overview</a></li>
+                                    <li><a href="../html/Developer.html">Dev Team</a></li>
+                                    <li><a href="../html/License.html">License</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-6 description-list-items">
+
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <h3>Get-in-Touch</h3>
+                                        </a>
+                                    </li>
+                                    <li><a href="../Code/contact_us/index.html">Contact us</a></li>
+                            </div>
+                            <div class="col-lg-4 col-md-12 description-list-items">
+                                <img src="../Code/main/images/img_esrb.png" alt="ESRB Logo">
+                            </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="horizontal-line"></div>
+                        <p>Copyright 2019 &copy; Designed by NTUT CSIE Students.</p>
+
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+            </div>
+        </footer>
+    <!-- jQuery.js & Bootstrap.js -->
+    <script src="../Code/main/js/jquery-3.3.1.min.js"></script>
+    <script src="../Code/main/js/bootstrap.js"></script>
+    <!-- GSAP.js -->
+    <script src="../Code/main/js/TweenMax.min.js"></script>
+    <!-- script.js -->
+    <script src="../Code/main/js/script.js"></script>
+</body>
+</html>

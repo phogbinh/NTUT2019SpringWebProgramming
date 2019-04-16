@@ -1,0 +1,26 @@
+body{
+    background-color:rgba(10, 20, 30, 0.897);
+}
+
+.main-border{
+    width: auto;
+    height:auto;
+    margin:auto;
+    display:flex;
+    padding:5% 5% 25% 5%;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    background-image:url(../img/main_background.jpg);
+    background-size:cover;
+}
+
+.main-header{
+    font-family: Arial Black,sans-serif;
+    color:white;
+}
+
+.main-content{
+    font-family: Arial ,sans-serif;
+    color:white;
+}

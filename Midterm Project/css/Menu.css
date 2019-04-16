@@ -1,0 +1,45 @@
+body{
+    background-color:rgba(10, 20, 30, 0.897);
+}
+
+.main{
+    display:flex;
+    flex-direction:column;
+    align-content: center;
+}
+
+.Overview{
+    background-image:url(../img/licenseBackground.jpg);
+    background-size:cover;
+    padding:6% 0%;
+}
+
+.Overview-border{
+    text-align:center;
+    font-family: Arial Black,sans-serif;
+    color:white;
+}
+
+.Developer{
+    background-image:url(../img/background.jpg);
+    background-size:cover;
+    padding: 6% 0%;
+}
+
+.Developer-border{
+    text-align:center;
+    font-family: Arial Black,sans-serif;
+    color:white;
+}
+
+.License{
+    background-image:url(../img/main_background.jpg);
+    background-size:cover;
+    padding:6% 0%;
+}
+
+.License-border{
+    text-align:center;
+    font-family: Arial Black,sans-serif;
+    color:white;
+}

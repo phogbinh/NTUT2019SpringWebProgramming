@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap.css & style.css -->
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Brawlhalla</title>
+</head>
+
+<body>
+    <div class="pb-container">
+        <header>
+            <div class="fake-nav"></div>
+            <!-- Navigation Bar -->
+            <nav class="navbar navbar-expand-lg pb-navbar-dark fixed-top">
+                <div class="container">
+
+                    <!-- 
+                        ~ This is the navigation bar for Mobile view in RWD
+                     -->
+                    <a class="navbar-brand col-auto" href="./index.html">
+                        <img class="img-fluid" src="./images/img_logo.png" alt="Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuItems" aria-controls="menuItems" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+
+                    <!-- 
+                        ~ This is the navigation bar for Desktop view in RWD
+                        ~ indicated by the classes 'collapse' and 'navbar-collapse'
+                    -->
+                    <div class="collapse navbar-collapse" id="menuItems">
+                        <ul class="navbar-nav ml-auto">
+
+                            <!--
+                                ~ 'navbarDropdown' is not defined in Bootstrap
+                            -->
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                About
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <div class="container">
+                                        <div class="row no-gutters">
+                                            <div class="col-lg-4">
+                                                <a href="../../html/Overview.html">
+                                                    <div class="dropdown-menu-items">
+                                                        <h1>Overview</h1>
+                                                        <div class="dropdown-menu-horizontal-line"></div>
+                                                        <p>What is Brawlhalla ?</p>
+                                                        <img class="img-fluid" src="./images/img_about_dropdown_menu_overview.png" alt="Overview">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <a href="../../html/Developer.html">
+                                                    <div class="dropdown-menu-items">
+                                                        <h1>Dev Team</h1>
+                                                        <div class="dropdown-menu-horizontal-line"></div>
+                                                        <p>Learn about the creator of the game and the web.</p>
+                                                        <img class="img-fluid" src="./images/img_about_dropdown_menu_devTeam.png" alt="Dev Team">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <a href="../../html/License.html">
+                                                    <div class="dropdown-menu-items">
+                                                        <h1>License</h1>
+                                                        <div class="dropdown-menu-horizontal-line"></div>
+                                                        <p>The attached software licence of Brawlhalla</p>
+                                                        <img class="img-fluid" src="./images/img_about_dropdown_menu_licence.png" alt="Licence">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <div class="verticle-line"></div>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../html/GamePlays.html">Game Plays</a>
+                            </li>
+
+                            <div class="verticle-line"></div>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../html/Legend.html">Legends</a>
+                            </li>
+
+                            <div class="verticle-line"></div>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../../html/PlayNow.html">Play Now</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <article>
+            <div class="container">
+                <div class="row justify-content-center no-gutters">
+                    <img class="col" src="./images/img_main.png" alt="Main Image">
+                    <div class="w-100"></div>
+
+                    <div class="col-xl-3 col-lg-6">
+                        <a href="../../html/Menu.html">
+                            <div class="categories-list-items">
+
+                                <h3>About</h3>
+                                <p>Read about how we made it happen</p>
+                                <img class="img-fluid" src="./images/img_category_about.png" alt="About">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-6">
+                        <a href="../../html/GamePlays.html">
+                            <div class="categories-list-items">
+
+                                <h3>Game Plays</h3>
+                                <p>Watch the stunning game plays</p>
+                                <img class="img-fluid" src="./images/img_category_gamePlays.png" alt="Game Plays">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-6">
+                        <a href="../../html/Legend.html">
+                            <div class="categories-list-items">
+
+                                <h3>Legends</h3>
+                                <p>Get to know the roles in the game</p>
+                                <img class="img-fluid" src="./images/img_category_legends.png" alt="Legends">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-lg-6">
+                        <a href="../../html/PlayNow.html">
+                            <div class="categories-list-items">
+                                <h3>Play Now</h3>
+                                <p>Download the game and try it now!</p>
+                                <img class="img-fluid" src="./images/img_category_playNow.png" alt="Play Now">
+                                <div class="box-background"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <footer>
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-3"></div>
+                    <div class="col-6 footer-container">
+                        <div class="row no-gutters">
+                            <div class="col-lg-4 col-md-6 description-list-items">
+                                <ul>
+                                    <li>
+                                        <a href="../../html/Menu.html">
+                                            <h3>About</h3>
+                                        </a>
+                                    </li>
+                                    <li><a href="../../html/Overview.html">Overview</a></li>
+                                    <li><a href="../../html/Developer.html">Dev Team</a></li>
+                                    <li><a href="../../html/License.html">License</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-6 description-list-items">
+
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <h3>Get-in-Touch</h3>
+                                        </a>
+                                    </li>
+                                    <li><a href="../contact_us/index.html">Contact us</a></li>
+                            </div>
+                            <div class="col-lg-4 col-md-12 description-list-items">
+                                <img src="./images/img_esrb.png" alt="ESRB Logo">
+                            </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="horizontal-line"></div>
+                        <p>Copyright 2019 &copy; Designed by NTUT CSIE Students.</p>
+
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- jQuery.js & Bootstrap.js -->
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <!-- GSAP.js -->
+    <script src="./js/TweenMax.min.js"></script>
+    <!-- script.js -->
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

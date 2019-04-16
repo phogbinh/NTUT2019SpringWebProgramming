@@ -1,0 +1,365 @@
+/* Import fonts */
+
+@font-face {
+    font-family: Futura;
+    src: url("../fonts/FuturaHeavy.ttf");
+}
+
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url("../fonts/PlayfairDisplayRegular.otf") format("opentype");
+}
+
+
+/* Universal Area */
+
+body {
+    background-image: url("../images/img_background.jpg");
+    background-size: cover;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/* Header Area - Navigation Bar */
+
+
+/*
+    ~ Customization of Bootstrap Navigation Bar - I
+    ~ Change 'navbar' height to 100px
+*/
+
+.navbar {
+    min-height: 100px;
+    padding: 0 16px;
+}
+
+.navbar-brand {
+    width: 195px;
+    height: 100px;
+    padding: 0 15px;
+    line-height: 100px;
+}
+
+.navbar-toggle {
+    /* (100px - button height 34px) / 2 = 33px */
+    margin-top: 33px;
+    padding: 9px 10px !important;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav>li>a {
+        /* (100px - line-height of 27px) / 2 = 36.5px */
+        padding-top: 36.5px;
+        padding-bottom: 36.5px;
+        line-height: 27px;
+    }
+}
+
+
+/*
+    ~ Customization of Bootstrap Navigation Bar - II
+    ~ Define my own 'pb-navbar-dark'
+*/
+
+.pb-navbar-dark .navbar-brand {
+    color: #fff;
+}
+
+.pb-navbar-dark .navbar-brand:hover,
+.pb-navbar-dark .navbar-brand:focus {
+    color: #fff;
+}
+
+.pb-navbar-dark .navbar-nav .nav-link {
+    color: #FFFBFB;
+    font-family: Futura;
+    font-size: 9px;
+    text-transform: uppercase;
+}
+
+.pb-navbar-dark .navbar-nav .nav-link:hover,
+.pb-navbar-dark .navbar-nav .nav-link:focus {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.pb-navbar-dark .navbar-nav .nav-link.disabled {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.pb-navbar-dark .navbar-nav .show>.nav-link,
+.pb-navbar-dark .navbar-nav .active>.nav-link,
+.pb-navbar-dark .navbar-nav .nav-link.show,
+.pb-navbar-dark .navbar-nav .nav-link.active {
+    color: #fff;
+}
+
+.pb-navbar-dark .navbar-toggler {
+    color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.pb-navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.pb-navbar-dark .navbar-text {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.pb-navbar-dark .navbar-text a {
+    color: #fff;
+}
+
+.pb-navbar-dark .navbar-text a:hover,
+.pb-navbar-dark .navbar-text a:focus {
+    color: #fff;
+}
+
+
+/*
+    ~ Customization of Bootstrap Navigation Bar - III
+    ~ Background of 'navbar'. Define 'fake-nav'. Define 'vertical-line'
+*/
+
+.navbar {
+    background-color: #233140;
+}
+
+
+/* Since navigation bar is fixed position, a fake bar is needed to make the web look smooth */
+
+.fake-nav {
+    min-height: 100px;
+}
+
+.verticle-line {
+    height: 9px;
+    width: 0px;
+    border-left: 1px solid #FFFBFB;
+    align-self: center;
+}
+
+
+/* Remove verticle lines on Tablet & Mobile view */
+
+@media (max-width: 575.98px) {
+    .verticle-line {
+        display: none;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .verticle-line {
+        display: none;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .verticle-line {
+        display: none;
+    }
+}
+
+
+/* Header Area - Navigation Bar - Dropdown Menu */
+
+.dropdown-menu {
+    /*'position: absolute' to something (maybe 'navbar')*/
+    /*MY CODE HERE*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background-color: rgba(78, 90, 102, 0.1);
+    width: 100%;
+}
+
+.dropdown-menu a {
+    color: white;
+}
+
+.dropdown-menu-items img {
+    width: 100%;
+}
+
+.dropdown-menu-items p {
+    color: #C5C5C5;
+    font-family: Futura;
+    font-size: 14px;
+    position: absolute;
+    top: 140px;
+    margin-left: 10%;
+    /* 37px in Desktop view */
+}
+
+.dropdown-menu-horizontal-line {
+    width: 5%;
+    height: 0px;
+    border-top: 3px solid #C5C5C5;
+    position: absolute;
+    top: 120px;
+    margin-left: 10%;
+    /* 37px in Desktop view */
+}
+
+.dropdown-menu-items h1 {
+    color: #FFFBFB;
+    font-family: PlayfairDisplay;
+    font-size: 16px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 85px;
+    margin-left: 10%;
+    /* 37px in Desktop view */
+}
+
+.dropdown-menu-items .box-background {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.35);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* Footer Area */
+
+footer {
+    background-color: #233140;
+}
+
+
+/* Footer Area - Description */
+
+.description-list-items {
+    margin-top: 12.6%;
+    /* ~70px in Desktop view */
+    margin-bottom: 7%;
+    /* ~39px in Desktop view */
+}
+
+.description-list-items ul {
+    padding: 0;
+    margin: 0;
+}
+
+.description-list-items ul li {
+    list-style: none;
+    margin-bottom: 6%;
+    /* ~11px in Desktop view */
+}
+
+.description-list-items ul li a {
+    color: #FFFFFF;
+    font-family: PlayfairDisplay;
+    font-size: 13px;
+}
+
+.description-list-items ul li h3 {
+    color: #757575;
+    font-family: Futura;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 11.4%;
+    /* ~21px in Desktop view */
+}
+
+
+/* Footer Area - Others */
+
+.horizontal-line {
+    width: 100%;
+    height: 0px;
+    border-top: 1px solid #7D7D7D;
+}
+
+.footer-container p {
+    color: #FFFFFF;
+    font-family: PlayfairDisplay;
+    font-size: 13px;
+    margin: 7.6% 0;
+    /* ~42px in Desktop view */
+}
+
+
+/* Article Area */
+
+article h1 {
+    margin: 5% 0 3% 0;
+    text-align: center;
+}
+
+
+/* Article Area - My Form */
+
+#mForm {
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+
+/* Article Area - Sheet Data Container */
+
+.sheet-data-container {
+    min-height: 600px;
+}
+
+.grid {
+    max-width: 1200px;
+    margin-top: 5%;
+}
+
+
+/* clearfix */
+
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* ---- grid-item ---- */
+
+.grid-item {
+    width: 160px;
+    height: 120px;
+    float: left;
+    background: #233140;
+    border: 1px solid white;
+    border-radius: 10px;
+    /* Fonts */
+    color: white;
+    word-wrap: break-word;
+    /* break long words */
+    overflow: auto;
+    text-align: center;
+}
+
+.grid-item--width2 {
+    width: 320px;
+}
+
+.grid-item--width3 {
+    width: 480px;
+}
+
+.grid-item--width4 {
+    width: 640px;
+}
+
+.grid-item--height2 {
+    height: 200px;
+}
+
+.grid-item--height3 {
+    height: 260px;
+}
+
+.grid-item--height4 {
+    height: 360px;
+}

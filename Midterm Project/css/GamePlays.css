@@ -1,0 +1,59 @@
+body{
+    background-image:url(../img/gameplaysbackground.jpg);
+    background-size: cover;
+    position: relative;
+    margin:auto;
+    z-index:1;
+}
+
+.main{
+    width: auto;
+    padding:0 15%;
+    height:auto;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom:5%;
+}
+
+.main-header{
+    font-family: Arial Black,sans-serif;
+    position:fixed;left:center;top:120px;
+    color:rgb(29, 29, 78);
+    z-index:2;
+}
+
+.main-border{
+    background-color: white;
+    background-size:cover;
+    margin:20% 0 0 0;
+    z-index: 3;
+}
+
+.main-video{
+    z-index: 3;
+}
+
+.main-sub-border{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-sub-video{
+    display:flex;
+    justify-content: space-around;
+    padding: auto;
+
+}
+
+.line{
+    width:10px;
+}
+
+.line-hrz{
+    height:10px;
+}

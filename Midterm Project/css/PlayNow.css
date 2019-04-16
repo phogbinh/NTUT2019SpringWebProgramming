@@ -1,0 +1,44 @@
+body{
+    background-image:url(http://www.brawlhalla.com/c/uploads/2017/03/bw_greathall.jpg);
+    background-size: cover;
+    position: relative;
+    margin:auto;
+}
+
+.main{
+    width: auto;
+    padding:0 15%;
+    height:auto;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-border{
+    background-color: white;
+    background-size:cover;
+    padding:5% 10%;
+
+}
+
+.main-header{
+    font-family: Arial Black,sans-serif;
+    border:15% 0%;
+    color:rgb(29, 29, 78);
+}
+
+.main-content{
+    justify-content: space-around;
+    padding:5% 10%;
+}
+
+.main-button{
+    width:30%;
+    height:100%;
+    justify-content: center;
+    color:white;
+    background-color:rgb(29, 29, 78);
+
+}
