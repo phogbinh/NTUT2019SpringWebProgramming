@@ -226,6 +226,31 @@ a:hover {
 }
 
 
+/* Article Area - Main Image */
+
+.main-contents {
+    display: flex;
+    justify-content: center;
+}
+
+.main-img {
+    width: 100%;
+}
+
+.main-contents a {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.btn-play {
+    /* position: absolute; */
+    margin-top: 173.9%;
+    /* ~247px in Desktop view */
+    z-index: 1000;
+}
+
+
 /* Article Area - Categories List */
 
 .categories-list-items img {

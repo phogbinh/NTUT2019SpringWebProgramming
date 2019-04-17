@@ -1,6 +1,25 @@
 $(document).ready(function() {
-    /* CATEGORIES LIST */
+
     const mDuration = 300;
+    const mDurationButton = 200;
+
+    /* Play Button */
+    const playButton = ".btn-play";
+    $(playButton)
+        .mouseenter(function() {
+            $(this).fadeOut(mDuration, function() {
+                $(this).attr("src", "./images/btn_play_hover.png");
+                $(this).fadeIn(mDurationButton);
+            });
+        })
+        .mouseleave(function() {
+            $(this).fadeOut(mDuration, function() {
+                $(this).attr("src", "./images/btn_play.png");
+                $(this).fadeIn(mDuration);
+            });
+        });
+
+    /* Categories List */
     const hoverHorizontalLineHTML = "<div class='hover-horizontal-line'></div>";
     const boxBackGroundHTML = "<div class='box-background'></div>";
 
