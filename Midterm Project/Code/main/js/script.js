@@ -7,16 +7,22 @@ $(document).ready(function() {
     const playButton = ".btn-play";
     $(playButton)
         .mouseenter(function() {
-            $(this).fadeOut(mDuration, function() {
-                $(this).attr("src", "./images/btn_play_hover.png");
-                $(this).fadeIn(mDurationButton);
-            });
+            // $(this).fadeOut(mDuration, function() {
+            //     $(this).attr("src", "./images/btn_play_hover.png");
+            //     $(this).fadeIn(mDurationButton);
+            // });
+            $(this).hide();
+            $(this).attr("src", "./images/btn_play_hover.png");
+            $(this).fadeIn(mDurationButton);
         })
         .mouseleave(function() {
-            $(this).fadeOut(mDuration, function() {
-                $(this).attr("src", "./images/btn_play.png");
-                $(this).fadeIn(mDuration);
-            });
+            // $(this).fadeOut(mDuration, function() {
+            //     $(this).attr("src", "./images/btn_play.png");
+            //     $(this).fadeIn(mDuration);
+            // });
+            $(this).hide();
+            $(this).attr("src", "./images/btn_play.png");
+            $(this).fadeIn(mDuration);
         });
 
     /* Categories List */
