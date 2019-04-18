@@ -1,0 +1,174 @@
+/* Import Fonts */
+
+@font-face {
+    font-family: Myriad;
+    src: url("../fonts/MyriadRegular.OTF");
+}
+
+@font-face {
+    font-family: "Myriad Bold";
+    src: url("../fonts/MyriadBold.OTF");
+}
+
+
+/* Universal Area */
+
+html {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    width: 1280px;
+    height: 1653px;
+    font-family: Myriad;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+
+/* Content Area */
+
+header,
+article .container,
+footer {
+    padding: 0 110px;
+}
+
+
+/* Content Area - Header Area */
+
+header {
+    height: 170px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.brand-logo {
+    margin-right: auto;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-list-items {
+    list-style: none;
+}
+
+
+/* Content Area - Article Area*/
+
+article .container {
+    background-color: #b2e0e1;
+}
+
+.main-img {
+    margin: 23px 0;
+}
+
+.categories-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 23px 0;
+}
+
+.categories-list-items {
+    list-style: none;
+}
+
+.categories-list-items a {
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none;
+}
+
+.text-container {
+    width: 142px;
+    height: 218px;
+    background-color: #00999e;
+    display: flex;
+    align-items: center;
+}
+
+.text-container h1 {
+    font-family: "Myriad Bold";
+    font-size: 32px;
+    color: #ffffff;
+    margin-left: 16px;
+}
+
+.subtopic-container {
+    height: 679px;
+    background-color: #cceaeb;
+}
+
+.subtopic-list-items {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 102px;
+    padding-top: 60px;
+}
+
+.subtopic-list-items .info-container {
+    box-sizing: border-box;
+    width: 513px;
+    padding: 0 23px;
+    position: relative;
+    background-color: #00999e;
+}
+
+.subtopic-list-items .info-container a {
+    text-decoration: none;
+}
+
+.subtopic-list-items .info-container h1 {
+    font-size: 32px;
+    color: #ffffff;
+    margin-top: 23px;
+    margin-bottom: 0;
+}
+
+.subtopic-list-items .info-container p {
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 21px;
+}
+
+.subtopic-list-items .info-container img {
+    position: absolute;
+    top: 159px;
+}
+
+
+/* Content Area - Footer Area */
+
+footer {
+    height: 102px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #00999e;
+}
+
+footer p {
+    margin-right: auto;
+}
+
+footer img {
+    margin-right: 54px;
+}
+
+#btn-instagram {
+    margin-right: 0;
+}
