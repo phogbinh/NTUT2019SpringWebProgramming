@@ -1,4 +1,5 @@
 /* Universal Area */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,10 +9,8 @@
 body {
     width: 1260px;
     height: 940px;
-
     font-family: "Arial Black";
     font-size: 16px;
-
     background-color: #EDF2C5;
 }
 
@@ -19,11 +18,12 @@ a {
     text-decoration: none;
 }
 
+
 /* Container */
+
 .container {
     width: 940px;
     /* height: 880px; */
-
     margin-left: 160px;
     margin-right: 160px;
     margin-bottom: 35px;
@@ -34,18 +34,20 @@ a {
     border-radius: 3px;
 }
 
+
 /* Container - Header Area */
+
 header {
     margin-bottom: 20px;
 }
 
+
 /* Container - Header Area - Top Area */
+
 .top-list {
     width: 940px;
-
     display: flex;
     justify-content: flex-end;
-
     margin-bottom: 17px;
 }
 
@@ -56,18 +58,14 @@ header {
 .top-list .left-side-item {
     width: 271px;
     height: 42px;
-
     align-self: flex-end;
-
     margin-right: auto;
-    
     font-size: 44px;
     color: #778A50;
 }
 
 .top-list .right-side-items {
     height: 25px;
-
     margin-top: 61px;
     margin-right: 10px;
 }
@@ -83,42 +81,39 @@ header {
 
 .top-list .login-join a {
     height: 25px;
-
     display: flex;
     align-items: center;
-    
     font-family: "Arial";
     font-weight: bold;
     font-size: 14px;
     text-transform: uppercase;
-    color: #778A50;   
+    color: #778A50;
 }
 
 .top-list-items .login {
     width: 60px;
-
     display: flex;
     justify-content: center;
 }
 
 .top-list-items .join {
     width: 50px;
-
     display: flex;
     justify-content: center;
 }
 
 #join {
-    margin-right: 0px; /* required */
+    margin-right: 0px;
+    /* required */
 }
 
+
 /* Container - Header Area - Navigation Bar */
+
 .nav-list {
     height: 44px;
-
     display: flex;
     align-items: center;
-
     background-color: #778A50;
 }
 
@@ -131,43 +126,43 @@ header {
     color: #EDF2C5;
 }
 
+
 /* Container - Article Area */
+
 .main-img {
     display: block;
     margin-bottom: 30px;
 }
 
+
 /* Container - Article Area - Categories List Area */
+
 .categories-list {
     width: 940px;
-
     display: flex;
     justify-content: space-between;
 }
 
 .categories-list-items {
     width: 445px;
-
     list-style: none;
 }
 
 .categories-list-items .categories-title {
     height: 45px;
-
     display: flex;
     align-items: center;
-
     color: #EDF2C5;
     background-color: #778A50;
-
     padding-left: 30px;
     margin-bottom: 15px;
 }
 
+
 /* Container - Article Area - Categories List Area - Vegetables Container */
+
 .categories-list .vegetables-container ul {
     width: 445px;
-
     display: flex;
     justify-content: space-between;
 }
@@ -180,7 +175,9 @@ header {
     display: block;
 }
 
+
 /* Container - Article Area - Categories List Area - Contact Container */
+
 .categories-list-items .contact-description-container {
     height: 140px;
     display: block;
@@ -193,7 +190,6 @@ header {
     font-family: "Arial";
     font-size: 12px;
     color: #7D7D7D;
-
     padding-top: 16px;
 }
 
@@ -204,7 +200,6 @@ header {
 .categories-list-items .contact-description-container .horizontal-line {
     width: 414px;
     height: 0px;
-
     border-top: 1px solid #7D7D7D;
     margin-top: 16px;
 }
@@ -213,15 +208,15 @@ header {
     line-height: 1.83;
 }
 
+
 /* Footer Area */
+
 footer {
     width: 1260px;
     height: 60px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-    
     background-color: #778A50;
 }
 

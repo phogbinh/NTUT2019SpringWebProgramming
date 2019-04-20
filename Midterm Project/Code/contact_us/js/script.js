@@ -1,11 +1,12 @@
 $(document).ready(function() {
     /*-----------------------------FORM-----------------------------*/
     /*
+        ~ WRITE DATA TO GOOGLE SHEETS ON SUBMIT BUTTON BEING CLICKED
         ~ Remark:
-        ~ Try to make sure that the attribute 'name' of each input is similar to each column name of the spread sheet
+        ~ Do make sure that the attribute 'name' of each input in HTML is similar to each column name of the Google Sheets
     */
-    var $form = $('form#mForm'),
-        url = 'https://script.google.com/macros/s/AKfycbzhG7xvSnW3KyPUgJ2MdZ7-qaKhOU2E7-4_oEgdAdoyDS09sXBI/exec'
+    const $form = $('form#mForm');
+    const url = 'https://script.google.com/macros/s/AKfycbzhG7xvSnW3KyPUgJ2MdZ7-qaKhOU2E7-4_oEgdAdoyDS09sXBI/exec';
 
     $('#submit-form').on('click', function(e) {
         e.preventDefault();
@@ -52,7 +53,6 @@ $(document).ready(function() {
 
     $(dropDownItems)
         .mouseenter(function() {
-            // $(this).find(".box-background").fadeIn(mDuration);
             $(this).find(".box-background").fadeIn(mDuration);
         })
         .mouseleave(function() {
@@ -63,25 +63,25 @@ $(document).ready(function() {
 
 
 /*
-    ~ READ DATA FROM GOOGLE SHEET
-    ~ Warning: Must be outside '$(document).ready(function() {...};'
+    ~ READ DATA FROM GOOGLE SHEETS ON PAGE LOAD
+    ~ Warning: Must be outside the jQuery function '$(document).ready(function() {...};'
 */
-var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1L14C4cmVqUEwXlqdbC1LiH4kDwlz98kjXYu8OsBpFhc/edit?usp=sharing';
 
 function init() {
     Tabletop.init({
-        key: public_spreadsheet_url,
+        key: 'https://docs.google.com/spreadsheets/d/1L14C4cmVqUEwXlqdbC1LiH4kDwlz98kjXYu8OsBpFhc/edit?usp=sharing',
         callback: DisplaySheetDataInHTML,
         simpleSheet: true
     })
 }
 
 function DisplaySheetDataInHTML(data, tabletop) {
-    // Append the data from the Google Sheet into HTML
+    // Append the 'data' from Google Sheets into HTML
 
     data.forEach(rowData => {
         let mValues = Object.values(rowData);
-        // Create the container for each entry
+
+        // Create the Mansory container for each entry
         let mRandomWidth = parseInt((Math.random() * 100) % 4, 10);
         let mRandomHeight = parseInt((Math.random() * 100) % 4, 10);
 
@@ -97,26 +97,29 @@ function DisplaySheetDataInHTML(data, tabletop) {
             mGridHeight = "";
         }
 
+        // Concatenate Google Sheets 'name', underscore symbols, and Google Sheets 'message'
         let mStr = "";
-        // Concatenate 'name', some underscore symbols, and 'message'
         mValues.forEach(element => {
             if (mStr === "") {
+                // Google Sheets 'name' and underscore symbols
                 mStr = mStr + `<p>${element}</p><p>____</p>`;
             } else {
+                // Google Sheets 'message'
                 mStr = mStr + `<p>${element}</p>`;
             }
 
         });
-        // Append entry to HTML
+
+        // Append the entry (consisting of container and text) to HTML
         $(".sheet-data-container .grid").append(`<div class="grid-item${mGridWidth}${mGridHeight}">${mStr}</div>`);
     });
 
-    // Mansory animation initialization for the entries' containers
+    // Mansory Animation Initialization for the entries' containers
     $('.grid').masonry({
-        // options
         itemSelector: '.grid-item',
         columnWidth: 200
     });
 }
 
-window.addEventListener('DOMContentLoaded', init)
+// Call 'Tabletop.init()' to read data from Google Sheets on page load
+window.addEventListener('DOMContentLoaded', init);

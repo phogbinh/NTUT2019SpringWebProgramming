@@ -7,19 +7,11 @@ $(document).ready(function() {
     const playButton = ".btn-play";
     $(playButton)
         .mouseenter(function() {
-            // $(this).fadeOut(mDuration, function() {
-            //     $(this).attr("src", "./images/btn_play_hover.png");
-            //     $(this).fadeIn(mDurationButton);
-            // });
             $(this).hide();
             $(this).attr("src", "./images/btn_play_hover.png");
             $(this).fadeIn(mDurationButton);
         })
         .mouseleave(function() {
-            // $(this).fadeOut(mDuration, function() {
-            //     $(this).attr("src", "./images/btn_play.png");
-            //     $(this).fadeIn(mDuration);
-            // });
             $(this).hide();
             $(this).attr("src", "./images/btn_play.png");
             $(this).fadeIn(mDuration);
@@ -100,7 +92,6 @@ $(document).ready(function() {
 
     $(dropDownItems)
         .mouseenter(function() {
-            // $(this).find(".box-background").fadeIn(mDuration);
             $(this).find(".box-background").fadeIn(mDuration);
         })
         .mouseleave(function() {
