@@ -1,0 +1,160 @@
+/* Import Fonts */
+
+@font-face {
+    font-family: Myriad;
+    src: url("../fonts/MyriadRegular.OTF");
+}
+
+@font-face {
+    font-family: "Myriad Bold";
+    src: url("../fonts/MyriadBold.OTF");
+}
+
+
+/* Universal Area */
+
+body {
+    font-family: Myriad;
+    background-color: #b2e0e1;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* Universal Area - Bootstrap */
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1090px;
+    }
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+/* Content Area */
+
+
+/* Content Area - Header Area */
+
+.fake-nav {
+    min-height: 112px;
+}
+
+@media (max-width: 992px) {
+    .fake-nav {
+        min-height: 74px;
+    }
+}
+
+
+/* Content Area - Article Area*/
+
+.main-img {
+    margin: 0 0 23px 0;
+}
+
+.categories-list {
+    margin: 23px 0;
+}
+
+@media (max-width: 1200px) {
+    .categories-list-items {
+        margin-bottom: 10px;
+    }
+    #shop-kids {
+        margin-bottom: 0;
+    }
+}
+
+.categories-list-items a {
+    text-decoration: none;
+}
+
+.text-container {
+    background-color: #00999e;
+}
+
+.text-container h1 {
+    font-family: "Myriad Bold";
+    font-size: 32px;
+    color: #ffffff;
+    margin: 71px 0 0 16px;
+}
+
+.subtopic-container {
+    background-color: #cceaeb;
+}
+
+.subtopic-list-items {
+    margin: 0 102px;
+    padding-top: 60px;
+}
+
+#universal-bridge-fit-container {
+    padding-bottom: 109px;
+}
+
+.subtopic-list-items .info-container {
+    box-sizing: border-box;
+    padding: 0 23px;
+    background-color: #00999e;
+}
+
+.subtopic-list-items .info-container a {
+    text-decoration: none;
+}
+
+.subtopic-list-items .info-container h1 {
+    font-size: 32px;
+    color: #ffffff;
+    margin-top: 23px;
+    margin-bottom: 0;
+}
+
+.subtopic-list-items .info-container p {
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 21px;
+}
+
+.subtopic-list-items .info-container img {
+    /* position: absolute;
+    top: 159px; */
+    padding: 18px 0;
+}
+
+
+/* Content Area - Footer Area */
+
+footer {
+    background-color: #00999e;
+}
+
+footer p {
+    padding: 45px 0;
+    margin: 0;
+}
+
+footer img {
+    margin-right: 54px;
+    padding: 27px 0;
+}
+
+#btn-instagram {
+    margin-right: 0;
+}

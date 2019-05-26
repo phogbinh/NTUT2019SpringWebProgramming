@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap.css -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- style.css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>106590048_HW5</title>
+</head>
+
+<body>
+    <header>
+        <!-- Navigation Bar - Fake navigation bar to resolve fixed-top problem -->
+        <div class="fake-nav"></div>
+        <!-- Navigation Bar (fixed-top) -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+            <div class="container">
+                <!-- Navigation Bar - Logo -->
+                <a class="navbar-brand" href="#"><img src="./images/img_logo.png" alt="Main Image"></a>
+
+                <!-- Navigation Bar - Mobile view - Hamburger -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navigation Bar - Desktop view -->
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link" href="#"><img id="btn-nav-search" src="./images/btn_nav_search.png" alt="Search"></a>
+                        <a class="nav-item nav-link" href="#"><img id="btn-nav-favourite" src="./images/btn_nav_favourite.png" alt="Favourite"></a>
+                        <a class="nav-item nav-link" href="#"><img id="btn-nav-shopping-cart" src="./images/btn_nav_shopping_cart.png" alt="Shopping Cart"></a>
+                        <a class="nav-item nav-link" href="#"><img id="btn-nav-user" src="./images/btn_nav_user.png" alt="User"></a>
+                        <a class="nav-item nav-link" href="#"><img src="./images/btn_nav_help.png" alt="Help"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <article>
+        <div class="container">
+            <div class="main-img row justify-content-center no-gutters">
+                <a href="#"><img class="img-fluid" src="./images/img_main.png" alt="Main Image"></a>
+            </div>
+
+
+            <ul class="categories-list">
+                <div class="row">
+                    <!-- Shop Women -->
+                    <li class="categories-list-items col-xl-4">
+                        <a class="row no-gutters" href="#">
+                            <div class="text-container col-xl-5 col-lg-9 col-md-7 col">
+                                <h1>Shop Women</h1>
+                            </div>
+                            <img class="col-xl-7 col-lg-3 col-md-5 col" src="./images/img_shop_women.png" alt="">
+                        </a>
+                    </li>
+                    <!-- Shop Men -->
+                    <li class="categories-list-items col-xl-4">
+                        <a class="row no-gutters" href="#">
+                            <div class="text-container col-xl-5 col-lg-9 col-md-7 col">
+                                <h1>Shop Men</h1>
+                            </div>
+                            <img class="col-xl-7 col-lg-3 col-md-5 col" src="./images/img_shop_men.png" alt="">
+                        </a>
+                    </li>
+                    <!-- Shop Kids -->
+                    <li class="categories-list-items col-xl-4" id="shop-kids">
+                        <a class="row no-gutters" href="#">
+                            <div class="text-container col-xl-5 col-lg-9 col-md-7 col">
+                                <h1>Shop Kids</h1>
+                            </div>
+                            <img class="col-xl-7 col-lg-3 col-md-5 col" src="./images/img_shop_kids.png" alt="">
+                        </a>
+                    </li>
+                    <!--  -->
+                </div>
+            </ul>
+
+
+
+            <div class="subtopic-container">
+                <ul class="subtopic-list">
+                    <!-- Real Customer Service -->
+                    <li class="subtopic-list-items row justify-content-center no-gutters">
+
+                        <img class="col-lg-4" src="./images/img_customer_service.png" alt="Customer Service">
+
+                        <div class="info-container col-lg-8">
+                            <a href="#">
+                                <h1>Real Customer Service</h1>
+                            </a>
+                            <p>Need help? Our award-winning customer service team knows everything from A to Zenni.</p>
+                            <a href="#">
+                                <img class="btn-contact-us" src="./images/btn_contact_us.jpg" alt="Contact Us">
+                            </a>
+                        </div>
+                    </li>
+                    <!-- Universal Bridge Fit -->
+                    <li class="subtopic-list-items row justify-content-center no-gutters" id="universal-bridge-fit-container">
+
+                        <img class="col-lg-4" src="./images/img_universal_bridge_fit.png" alt="Universal Bridge Fit">
+
+                        <div class="info-container col-lg-8">
+                            <a href="#">
+                                <h1>Universal Bridge Fit</h1>
+                            </a>
+
+                            <p>Great for low nose bridges!</p>
+                            <a href="#">
+                                <img class="btn-shop-now" src="./images/btn_shop_now.jpg" alt="Shop Now">
+                            </a>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </article>
+
+    <footer>
+        <div class="container">
+            <div class="row no-gutters">
+                <p class="col">&#169; COPYRIGHT 2019 ZENNI OPTICAL ®, INC. ALL RIGHTS RESERVED.</p>
+                <a href="#"><img src="./images/btn_footer_facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="./images/btn_footer_youtube.png" alt="Youtube"></a>
+                <a href="#"><img src="./images/btn_footer_instagram.png" alt="Instagram" id="btn-instagram"></a>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- JQuery.js -->
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap.js -->
+    <script src="./js/bootstrap.js"></script>
+    <!-- GreenSock GASP -->
+    <script src="./js/TweenMax.min.js"></script>
+    <!-- script.js -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
