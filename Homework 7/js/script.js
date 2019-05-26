@@ -42,23 +42,3 @@ $(document).ready(function() {
             TweenMax.to($(this).find("h1"), 0.3, { color: "#ffffff" });
         });
 });
-
-
-/* Media Query */
-function myFunction(x) {
-    if (x.matches) { // If media query matches
-        document.getElementById("btn-nav-search").src = "../images/btn_nav_search_collapse.png";
-        document.getElementById("btn-nav-favourite").src = "../images/btn_nav_favourite_collapse.png";
-        document.getElementById("btn-nav-shopping-cart").src = "../images/btn_nav_shopping_cart_collapse.png";
-        document.getElementById("btn-nav-user").src = "../images/btn_nav_user_collapse.png";
-    } else {
-        document.getElementById("btn-nav-search").src = "../images/btn_nav_search.png";
-        document.getElementById("btn-nav-favourite").src = "../images/btn_nav_favourite.png";
-        document.getElementById("btn-nav-shopping-cart").src = "../images/btn_nav_shopping_cart.png";
-        document.getElementById("btn-nav-user").src = "../images/btn_nav_user.png";
-    }
-}
-
-var x = window.matchMedia("(max-width: 992px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes

@@ -49,7 +49,7 @@ li {
 /* Content Area */
 
 
-/* Content Area - Header Area */
+/* Content Area - Header Area - Navigation Bar */
 
 .fake-nav {
     min-height: 112px;
@@ -58,6 +58,28 @@ li {
 @media (max-width: 992px) {
     .fake-nav {
         min-height: 74px;
+    }
+}
+
+.btn-nav-search-collapse,
+.btn-nav-favourite-collapse,
+.btn-nav-shopping-cart-collapse,
+.btn-nav-user-collapse {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .btn-nav-search,
+    .btn-nav-favourite,
+    .btn-nav-shopping-cart,
+    .btn-nav-user {
+        display: none;
+    }
+    .btn-nav-search-collapse,
+    .btn-nav-favourite-collapse,
+    .btn-nav-shopping-cart-collapse,
+    .btn-nav-user-collapse {
+        display: block;
     }
 }
 
