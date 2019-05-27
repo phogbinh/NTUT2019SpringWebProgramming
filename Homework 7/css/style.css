@@ -61,6 +61,12 @@ li {
     }
 }
 
+@media (max-width: 403px) {
+    .fake-nav {
+        min-height: 114px;
+    }
+}
+
 .btn-nav-collapse {
     display: none;
 }
@@ -79,6 +85,15 @@ li {
         display: inline;
         margin-left: 20px;
         font-size: 32px;
+        color: #00999e;
+    }
+}
+
+@media (max-width: 403px) {
+    .btn-nav-collapse h1 {
+        display: inline;
+        margin-left: 20px;
+        font-size: 18px;
         color: #00999e;
     }
 }
@@ -125,6 +140,13 @@ li {
 .subtopic-list-items {
     margin: 0 102px;
     padding-top: 60px;
+}
+
+@media (max-width: 576px) {
+    .subtopic-list-items {
+        margin: 0;
+        padding-top: 60px;
+    }
 }
 
 #universal-bridge-fit-container {
@@ -175,6 +197,13 @@ footer p {
 footer img {
     margin-right: 54px;
     padding: 27px 0;
+}
+
+@media (max-width: 576px) {
+    footer img {
+        margin-right: 0;
+        padding: 27px 0;
+    }
 }
 
 #btn-instagram {
