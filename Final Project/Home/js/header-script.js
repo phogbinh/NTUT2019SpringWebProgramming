@@ -68,9 +68,10 @@ $(document).ready(function() {
             if (hamburgerAnimation.progress() == 0) {
                 HideNavMenu();
             }
-
         }
+
         /*------ HELP DROP DOWN ------*/
+
         // Change help drop down height according to its children
         function GetHelpDropDownChildrenTotalHeight() {
             let totalHeight = 0;
