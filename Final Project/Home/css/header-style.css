@@ -41,15 +41,25 @@
 
 /*--- LOGO ---*/
 
-#logo {
+#logo svg {
     width: 156px;
     height: 35px;
-    background: url("../images/img_logo.svg");
+}
+
+#logo .st0 path {
+    fill: black;
+}
+
+#logo:hover path {
     transition: 0.5s;
 }
 
-#logo:hover {
-    background: url("../images/img_logo_hover.svg");
+#logo:hover path {
+    fill: #525252;
+}
+
+#logo:hover .st1 {
+    fill: #ec1d53;
 }
 
 
@@ -172,15 +182,21 @@
 
 #caret-down {
     display: inline-block;
-    width: 12px;
-    height: 12px;
-    padding-bottom: 3.5px;
-    background: url("../images/img_caret-down.svg");
+}
+
+#caret-down svg {
+    width: 11px;
+    height: 11px;
+    padding-bottom: 3px;
+}
+
+#caret-down .st0 {
+    fill: black;
     transition: 0.5s;
 }
 
-#caret-down:hover {
-    background: url("../images/img_caret-down_hover.svg");
+#caret-down:hover .st0 {
+    fill: #525252;
 }
 
 @media (max-width: 800px) {
