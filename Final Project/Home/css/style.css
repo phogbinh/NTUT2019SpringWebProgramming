@@ -1,0 +1,51 @@
+/*--------- UNIVERSAL ---------*/
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Gotham Bold";
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.pb-container {
+    height: 100%;
+    margin: 0 5em 0 5em;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/*------ Bootstrap configuration ------*/
+
+.container-fluid {
+    height: 100%;
+}
+
+
+/*------ Fullpage configuration ------*/
+
+span {
+    /* Change navigation dot color */
+    background: white !important;
+}

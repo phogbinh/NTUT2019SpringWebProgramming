@@ -1,0 +1,93 @@
+/*--------- ARTICLE ---------*/
+
+
+/*------ FIRST PAGE ------*/
+
+#fullpage .section:nth-child(1) {
+    background: url("../images/img_background.png") no-repeat;
+}
+
+
+/*--- INTRO ---*/
+
+#fullpage .section:nth-child(1) .container-fluid .pb-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pb-intro {
+    padding-top: 8em;
+    padding-bottom: 2em;
+}
+
+.pb-intro h1 {
+    color: white;
+}
+
+.pb-intro h1:nth-child(1) {
+    /* Fight before */
+    font-size: 4.5vw;
+}
+
+.pb-intro h1:nth-child(2) {
+    /* you fall! */
+    font-size: 8vw;
+    margin-bottom: 2.5vw;
+}
+
+.pb-intro .btn-play-now {
+    width: 200px;
+    height: 70px;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+@media (max-width: 640px) {
+    .pb-intro .btn-play-now {
+        width: 100px;
+        height: 35px;
+    }
+}
+
+.pb-intro .btn-play-now .background-hover {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: #c5c5c5;
+}
+
+.pb-intro .btn-play-now h2 {
+    text-transform: uppercase;
+    color: black;
+    /* font-size: 25px; */
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+@media (max-width: 640px) {
+    .pb-intro .btn-play-now h2 {
+        font-size: 0.85rem;
+    }
+}
+
+
+/* BUTTON SCROLL DOWN */
+
+.btn-scroll-down {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.btn-scroll-down img {
+    width: 25px;
+    height: 25px;
+}

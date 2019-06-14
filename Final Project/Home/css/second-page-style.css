@@ -1,0 +1,198 @@
+/*--------- ARTICLE ---------*/
+
+
+/*------ SECOND PAGE ------*/
+
+#fullpage .section:nth-child(2) {
+    background-color: rgb(122, 0, 0);
+    position: relative;
+}
+
+#fullpage .section:nth-child(2) .container-fluid .pb-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*--- LEFT & RIGHT SECTION ---*/
+
+#fullpage .section:nth-child(2) .container-fluid .pb-container {
+    padding-top: 8em;
+    padding-bottom: 6em;
+}
+
+@media (max-width: 640px) {
+    #fullpage .section:nth-child(2) .container-fluid .pb-container {
+        display: block;
+    }
+}
+
+.pb-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+}
+
+@media (max-width: 640px) {
+    .pb-section {
+        width: 100%;
+        height: 60%;
+        display: block;
+    }
+    .pb-section:nth-child(1) {
+        height: 30%;
+    }
+}
+
+.pb-section ul {
+    display: flex;
+}
+
+.pb-section .pb-box {
+    position: relative;
+    cursor: pointer;
+}
+
+.pb-section .pb-box .pb-animation-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #c5c5c5;
+    opacity: 0.5;
+}
+
+.pb-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.pb-content h1 {
+    text-transform: uppercase;
+    color: black;
+    font-size: 2vw;
+}
+
+@media (max-width: 640px) {
+    .pb-content h1 {
+        font-size: 4vw;
+    }
+}
+
+@media (max-height: 400px) {
+    .pb-box {
+        min-height: 2em;
+    }
+}
+
+.pb-content p {
+    color: #282828;
+    font-family: "Gotham Book";
+    font-size: 1.25vw;
+    padding: 1vw 2vw 0 2vw;
+}
+
+
+/*--- LEFT SECTION ---*/
+
+.left ul {
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 640px) {
+    .left ul:nth-child(2) {
+        display: none;
+    }
+}
+
+.left .pb-box {
+    width: 50%;
+    height: 100%;
+}
+
+@media (max-width: 800px) {
+    .left .pb-box {
+        display: none;
+    }
+    #about {
+        display: block;
+        width: 100%;
+        height: 200%;
+    }
+}
+
+@media (max-width: 640px) {
+    #about {
+        height: 100%;
+    }
+}
+
+
+/*--- RIGHT SECTION ---*/
+
+.right ul {
+    height: 45%;
+    width: 100%;
+}
+
+@media (max-width: 640px) {
+    .right ul {
+        height: 50%;
+        margin-top: 3.5vh;
+    }
+}
+
+.right .pb-box {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 800px) {
+    .right .pb-box p {
+        display: none;
+    }
+}
+
+
+/*--- FOOTER ---*/
+
+footer {
+    position: absolute;
+    bottom: 0%;
+    background-color: white;
+    width: 100%;
+    height: 5em;
+}
+
+footer .pb-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .pb-container h1 {
+    font-size: 1rem;
+}
+
+
+/* COPYRIGHT */
+
+#copyright {
+    width: 15px;
+    height: 15px;
+}
+
+
+/* BUTTON SCROLL UP */
+
+.btn-scroll-up img {
+    width: 25px;
+    height: 25px;
+}
