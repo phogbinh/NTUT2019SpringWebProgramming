@@ -50,11 +50,13 @@
     fill: black;
 }
 
-#logo:hover path {
+#logo path,
+#logo rect {
     transition: 0.5s;
 }
 
-#logo:hover path {
+#logo:hover path,
+#logo:hover rect {
     fill: #525252;
 }
 
