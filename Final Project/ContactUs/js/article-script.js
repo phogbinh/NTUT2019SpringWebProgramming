@@ -39,8 +39,7 @@ $(document).ready(function() {
     });
 
     /*--- LOGIN ---*/
-    $(".login button").on("click", function() {
-        /* LOGIN */
+    $("#btn-login").on("click", function() {
         const email = $("#login_email_field").val();
         const password = $("#login_password_field").val();
 
@@ -48,13 +47,12 @@ $(document).ready(function() {
             // Handle Errors here.
             var errorCode = error.code;
             var errorMessage = error.message;
-            // ...
+            // Display the error
             window.alert("Error: " + errorMessage);
         });
     });
 
-    $("#logout").on("click", function() {
-        /* SIGN OUT */
+    $("#btn-logout").on("click", function() {
         firebase.auth().signOut().then(function() {
             // Sign-out successful.
             window.alert("You have logged out successfully!");
@@ -65,8 +63,7 @@ $(document).ready(function() {
     });
 
     /*--- SIGN UP ---*/
-    $(".signup button").on("click", function() {
-        /* SIGN IN */
+    $("#btn-signup").on("click", function() {
         const email = $("#signup_email_field").val();
         const password = $("#signup_password_field").val();
 
@@ -80,9 +77,6 @@ $(document).ready(function() {
     });
 
     /* LOGIN/ SIGN UP */
-    // Hide logged in and sign up at first
-    $(".logged-in").css({ "display": "none" });
-    $(".signup").css({ "display": "none" });
 
     // Show sign up, hide login
     $(".login a").on("click", function() {
@@ -105,10 +99,10 @@ $(document).ready(function() {
     */
     const url = 'https://script.google.com/macros/s/AKfycbzhG7xvSnW3KyPUgJ2MdZ7-qaKhOU2E7-4_oEgdAdoyDS09sXBI/exec';
 
-    $('#submit-form').on('click', function(e) {
+    $('#btn-submit').on('click', function(e) {
         e.preventDefault();
 
-        var jqxhr = $
+        const serializeObject = $
             .ajax({
                 url: url,
                 method: "GET",
@@ -116,14 +110,10 @@ $(document).ready(function() {
                 data: $("#pb-form").serializeObject()
             })
             .done(
-                // Reload website
-                // () => {
-                //     location.reload();
-                // }
+                // Notify the user
                 () => {
                     window.alert("Your request has been submitted successfully!");
                 }
             );
     });
-
 });
