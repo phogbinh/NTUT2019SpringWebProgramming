@@ -226,7 +226,7 @@ article .container-fluid .pb-container {
 
 /*--- LOGGED IN BUTTON ---*/
 
-.logged-in button {
+#btn-logout {
     /* Button */
     margin-top: 2.5em;
     width: 100%;
@@ -243,17 +243,17 @@ article .container-fluid .pb-container {
     transition: 0.5s;
 }
 
-.logged-in button:hover {
+#btn-logout:hover {
     background-color: #0D576E;
 }
 
 
 /*--- SUBMIT BUTTON ---*/
 
-#submit-form {
+#btn-submit {
     background-color: #ec1d53;
 }
 
-#submit-form:hover {
+#btn-submit:hover {
     background-color: rgb(122, 0, 0);
 }
