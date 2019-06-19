@@ -6,6 +6,7 @@ article {
     position: relative;
     min-height: calc(100% - 5em);
     background: url("../images/img_background.png") no-repeat;
+    background-size: cover;
 }
 
 article .pb-scroll-magic-placeholder {
