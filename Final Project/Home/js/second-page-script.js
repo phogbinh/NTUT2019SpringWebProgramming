@@ -81,22 +81,22 @@ $(document).ready(function() {
 
     // On click
     $('#box-1').on("click", function() {
-        window.location = "../../About/index.html";
+        window.location = "../About/index.html";
     });
     $('#box-2').on("click", function() {
-        window.location = "../../Overview/index.html";
+        window.location = "../Overview/index.html";
     });
     $('#box-3').on("click", function() {
-        window.location = "../../DevTeam/index.html";
+        window.location = "../DevTeam/index.html";
     });
     $('#box-4').on("click", function() {
-        window.location = "../../License/index.html";
+        window.location = "../License/index.html";
     });
     $('#box-5').on("click", function() {
-        window.location = "../../Watch/index.html";
+        window.location = "../Watch/index.html";
     });
     $('#box-6').on("click", function() {
-        window.location = "../../Legends/index.html";
+        window.location = "../Legends/index.html";
     });
 
 });
