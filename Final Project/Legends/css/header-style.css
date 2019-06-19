@@ -1,0 +1,268 @@
+/*--------- HEADER ---------*/
+
+
+/*------ NAV BAR ------*/
+
+.pb-nav-bar {
+    position: fixed;
+    /* width: calc(25% - 30px); */
+    height: 5em;
+    top: 2em;
+    z-index: 100;
+    background-color: white;
+    box-shadow: 0 2px 0 black;
+}
+
+@media (max-width: 800px) {
+    .pb-nav-bar {
+        width: calc(100% - 30px);
+    }
+}
+
+.pb-nav-bar .pb-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 0;
+}
+
+@media (max-width: 800px) {
+    .pb-nav-bar .pb-container {
+        margin-right: 5em;
+    }
+}
+
+@media (max-width: 640px) {
+    .pb-container {
+        margin: 0 2em 0 2em !important;
+    }
+}
+
+
+/*--- LOGO ---*/
+
+#logo svg {
+    width: 156px;
+    height: 35px;
+}
+
+#logo .st0 path {
+    fill: black;
+}
+
+#logo path,
+#logo rect {
+    transition: 0.5s;
+}
+
+#logo:hover path,
+#logo:hover rect {
+    fill: #525252;
+}
+
+#logo:hover .st1 {
+    fill: #ec1d53;
+}
+
+
+/*--- HAMBURGER ---*/
+
+.hamburger {
+    width: 45px;
+    height: 45px;
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .hamburger {
+        display: block;
+    }
+}
+
+
+/*------ NAV MENU ------*/
+
+.pb-nav-menu {
+    position: fixed;
+    width: calc(100% - 30px);
+    height: 5em;
+    top: 2em;
+    z-index: 50;
+    background-color: white;
+    box-shadow: 0 2px 0 black;
+}
+
+@media (max-width: 800px) {
+    .pb-nav-menu {
+        /* Avoid it conflicting positions with the other elements */
+        position: fixed;
+        width: calc(100% - 30px);
+        height: 5em;
+        top: 7em;
+        z-index: 100;
+        /* Design */
+        background-color: white;
+        box-shadow: 0 2px 0 black;
+    }
+}
+
+@media (max-width: 640px) {
+    .pb-nav-menu {
+        /* Avoid it conflicting positions with the other elements */
+        position: fixed;
+        width: calc(100% - 30px);
+        height: auto;
+        top: 7em;
+        z-index: 100;
+        /* Design */
+        background-color: white;
+        box-shadow: 0 2px 0 black;
+    }
+}
+
+.pb-nav-menu ul {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    .pb-nav-menu ul {
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .pb-nav-menu ul {
+        width: 100%;
+        display: block;
+    }
+}
+
+.pb-nav-menu ul li {
+    margin-right: 8em;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .pb-nav-menu ul li {
+        margin: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .pb-nav-menu ul li {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+}
+
+.pb-nav-menu ul li a {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: black;
+    transition: 0.5s;
+}
+
+.pb-nav-menu ul li a:hover {
+    color: #525252;
+}
+
+.pb-nav-menu ul li:nth-child(3) {
+    margin-right: 0;
+}
+
+
+/*--- HELP ---*/
+
+
+/* HELP CARET DOWN BUTTON */
+
+#caret-down {
+    display: inline-block;
+}
+
+#caret-down svg {
+    width: 11px;
+    height: 11px;
+    padding-bottom: 3px;
+}
+
+#caret-down .st0 {
+    fill: black;
+    transition: 0.5s;
+}
+
+#caret-down:hover .st0 {
+    fill: #525252;
+}
+
+@media (max-width: 800px) {
+    #caret-down {
+        display: none;
+    }
+}
+
+
+/* HELP DROP DOWN */
+
+.pb-help-drop-down {
+    /* Avoid it conflicting positions with the other elements */
+    position: fixed;
+    width: calc(100% - 30px);
+    height: auto;
+    top: 7em;
+    z-index: 100;
+    padding: 0 5em 0 5em;
+    /* Design */
+    background-color: white;
+    box-shadow: 0 2px 0 black;
+}
+
+.pb-help-drop-down ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pb-help-drop-down ul li {
+    margin-left: 1em;
+}
+
+.pb-help-drop-down ul li {
+    text-align: right;
+}
+
+.pb-help-drop-down ul li a {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: black;
+    transition: 0.5s;
+}
+
+.pb-help-drop-down ul li a:hover {
+    color: #525252;
+}
+
+.pb-help-drop-down ul li p {
+    font-family: "Gotham Book";
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+
+.pb-help-drop-down ul li p a {
+    text-transform: none;
+    color: #ed1b52;
+    text-decoration: underline;
+    transition: 0.5;
+}
+
+.pb-help-drop-down ul li p a:hover {
+    color: #ed1b52;
+    font-size: 1.05rem;
+}

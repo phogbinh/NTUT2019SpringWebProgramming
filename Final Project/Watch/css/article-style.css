@@ -1,0 +1,44 @@
+/*--------- ARTICLE ---------*/
+
+article {
+    background-image:url(../img/gameplaysbackground.jpg);
+    background-size: cover;
+    margin:auto;
+}
+
+article .pb-scroll-magic-placeholder {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    top: 55vh;
+    background-color: black;
+    z-index: -1;
+    visibility: hidden;
+}
+
+
+
+.main-video{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.container{
+    margin:7em auto 1px auto;
+    
+}
+
+.sub-video{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row{
+    color:rgb(29, 29, 78);
+    font-family:"Gotham Bold";
+}

@@ -1,0 +1,259 @@
+/*--------- ARTICLE ---------*/
+
+article {
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-height: calc(100% - 5em);
+    background: url("../images/img_background.png") no-repeat;
+}
+
+article .pb-scroll-magic-placeholder {
+    position: absolute;
+    height: 0;
+    width: 100%;
+    top: 55vh;
+    background-color: black;
+    z-index: -1;
+}
+
+article .container-fluid {
+    padding-top: 8em;
+    padding-bottom: 1em;
+}
+
+article .container-fluid .pb-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*------ LOGIN/ SIGNUP ------*/
+
+.pb-login-signup {
+    display: table;
+    background: white;
+    overflow: hidden;
+    padding: 4em 3em 3em 3em;
+    margin: 0;
+}
+
+.pb-login-signup form {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.pb-login-signup form input {
+    outline: none;
+    border: none;
+}
+
+
+/*--- TITLE ---*/
+
+.pb-login-signup form h1 {
+    font-size: 2rem;
+    color: #333333;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding-bottom: 2em;
+}
+
+
+/*--- INPUT BOX ---*/
+
+.pb-login-signup form .pb-input-box {
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.pb-login-signup form .pb-input {
+    font-family: "Gotham Book";
+    font-size: 1rem;
+    color: black;
+    display: block;
+    width: 100%;
+    background: #e6e6e6;
+    height: 62px;
+    padding: 0 30px 0 65px;
+}
+
+
+/* INPUT SYMBOL */
+
+.pb-login-signup form .pb-input-symbol {
+    font-size: 24px;
+    color: #999999;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 23px;
+    padding-bottom: 5px;
+    pointer-events: none;
+    transition: all 0.4s;
+}
+
+
+/* INPUT FOCUS */
+
+.pb-login-signup form .pb-input-box {
+    z-index: 1;
+}
+
+.pb-login-signup form .pb-input-focus {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 0px 0px;
+    color: #ec1d53;
+}
+
+.pb-input:focus+.pb-input-focus {
+    animation: anim-shadow 0.5s ease-in-out forwards;
+}
+
+@keyframes anim-shadow {
+    to {
+        box-shadow: 0px 0px 60px 20px;
+        opacity: 0;
+    }
+}
+
+.pb-input:focus+.pb-input-focus+.pb-input-symbol {
+    color: #ec1d53;
+    padding-left: 18px;
+}
+
+
+/*--- LOGIN/ SIGN UP BUTTON ---*/
+
+.pb-login-signup form button {
+    /* Button */
+    margin-top: 2.5em;
+    width: 100%;
+    height: 4em;
+    outline: none !important;
+    border: none;
+    background-color: #ec1d53;
+    /* Text */
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+    /* Animation */
+    transition: 0.5s;
+}
+
+.pb-login-signup form button:hover {
+    background-color: rgb(122, 0, 0);
+}
+
+
+/*--- LOGIN/ SIGN UP SELECTION ---*/
+
+.pb-login-signup form .pb-sign-up {
+    margin-top: 6em;
+}
+
+.pb-login-signup form .pb-sign-up p {
+    font-size: 1rem;
+    text-align: center;
+    font-family: "Gotham Book";
+    color: #999999;
+}
+
+.pb-login-signup form .pb-sign-up p a {
+    text-transform: none;
+    color: #ec1d53;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+.pb-login-signup form .pb-sign-up p a:hover {
+    color: #ec1d53;
+    font-size: 1.05rem;
+}
+
+
+/*------ LOGGED IN ------*/
+
+.logged-in {
+    display: table;
+    background: white;
+    overflow: wrap;
+    padding: 4em 3em 3em 3em;
+    margin: 0;
+    max-width: 800px;
+}
+
+
+/*--- TITLE ---*/
+
+.logged-in h1 {
+    padding-bottom: 1em;
+}
+
+
+/*--- DESCRIPTION ---*/
+
+.logged-in p {
+    font-family: "Gotham Book";
+}
+
+
+/*--- TEXTAREA ---*/
+
+.logged-in textarea {
+    width: 100%;
+    margin-top: 2.5em;
+    font-family: "Gotham Book";
+    font-size: 1rem;
+    color: black;
+}
+
+
+/*--- LOGGED IN BUTTON ---*/
+
+.logged-in button {
+    /* Button */
+    margin-top: 2.5em;
+    width: 100%;
+    height: 4em;
+    outline: none !important;
+    border: none;
+    background-color: #1dbcec;
+    /* Text */
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+    /* Animation */
+    transition: 0.5s;
+}
+
+.logged-in button:hover {
+    background-color: #0D576E;
+}
+
+
+/*--- SUBMIT BUTTON ---*/
+
+#submit-form {
+    background-color: #ec1d53;
+}
+
+#submit-form:hover {
+    background-color: rgb(122, 0, 0);
+}

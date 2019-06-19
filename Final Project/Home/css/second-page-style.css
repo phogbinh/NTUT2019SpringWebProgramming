@@ -163,7 +163,7 @@
 
 /*--- FOOTER ---*/
 
-footer {
+#footer {
     position: absolute;
     bottom: 0%;
     background-color: white;
@@ -171,13 +171,15 @@ footer {
     height: 5em;
 }
 
-footer .pb-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+#footer .pb-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 
-footer .pb-container h1 {
+#footer .pb-container h1 {
     font-size: 1rem;
 }
 

@@ -1,0 +1,89 @@
+/*--------- ARTICLE ---------*/
+
+article {
+    background-image:url(http://www.brawlhalla.com/c/uploads/2017/03/bw_kingspass.jpg);
+    background-size:cover; 
+}
+
+article .pb-scroll-magic-placeholder {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    top: 55vh;
+    background-color: black;
+    z-index: -1;
+    visibility: hidden;
+}
+
+
+.container{
+    position: relative;
+    background-color:rgb(255, 255, 255);
+    margin-top:3em;
+}
+
+.main-content-header{
+    font-family:"Gotham Bold";
+    text-align: center;
+    margin:5%;
+    color:rgb(29, 29, 78);
+}
+
+.main-content-header2{
+    font-family: "Gotham Book";
+}
+
+.img-border{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    width:100%;
+}
+
+.img-odd , .img-even{
+    margin:15px 0px;
+    transition:0.2s;
+
+}
+
+
+.img-odd:hover , .img-even:hover{
+    transform:scale(2.0);
+    z-index: 4;
+}
+
+.main-content-word{
+    font-family: "Gotham Book";
+}
+
+@media only screen and (max-width: 1200px) {
+    .img-odd:hover , .img-even:hover{
+        transform:scale(1.5);
+        z-index: 4;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .img-even{
+        display: none;
+    }
+    .img-odd{
+        display:flex;
+        flex-direction: column;
+    }
+    .main-content-word{
+        display: none;
+    }
+    .img-odd:hover , .img-even:hover{
+        transform:scale(1.3);
+        z-index: 4;
+    }
+    .missing-text{
+        display: none;
+    }
+    
+}

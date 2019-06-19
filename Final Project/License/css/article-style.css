@@ -1,0 +1,39 @@
+/*--------- ARTICLE ---------*/
+
+article {
+    background-color:rgba(10, 20, 30, 0.897);
+}
+
+article .pb-scroll-magic-placeholder {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    top: 55vh;
+    background-color: black;
+    z-index: -1;
+    visibility: hidden;
+}
+
+
+.main-border{
+    width: auto;
+    height:auto;
+    margin:3em auto 1px auto;
+    display:flex;
+    padding:5% 5% 25% 5%;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    background-image:url(../../img/main_background.jpg);
+    background-size:cover;
+}
+
+.main-header{
+    font-family:"Gotham Bold";
+    color:white;
+}
+
+.main-content{
+    font-family: "Gotham Book";
+    color:white;
+}

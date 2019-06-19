@@ -34,7 +34,7 @@ function CreatePageAnimations(index, element) {
             mTimeline
                 .from("#box-1", boxAnimationDuration, { x: -200, rotationZ: -180, opacity: 0, ease: Quad.easeOut }, animationPosition)
                 // middle animation
-                .from("footer", 0.5, { opacity: 0 }, boxAnimationDuration)
+                .from("#footer", 0.5, { opacity: 0 }, boxAnimationDuration)
                 .from("#box-5", boxAnimationDuration, { y: boxAnimationDistance, scale: 0.9, opacity: 0, ease: Quad.easeOut }, otherAnimationStartDuration)
                 .from("#box-6", boxAnimationDuration, { y: boxAnimationDistance, scale: 0.9, opacity: 0, ease: Quad.easeOut }, otherAnimationStartDuration)
                 .from("#box-2", boxAnimationDuration, { y: -boxAnimationDistance, opacity: 0, ease: Quad.easeOut }, otherAnimationStartDuration)

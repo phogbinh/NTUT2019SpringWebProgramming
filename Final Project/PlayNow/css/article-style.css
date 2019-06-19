@@ -1,0 +1,115 @@
+/*--------- ARTICLE ---------*/
+
+article {
+    background-color:rgba(10, 20, 30, 0.897);
+    height:1000px;
+}
+
+article .pb-scroll-magic-placeholder {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    top: 55vh;
+    background-color: black;
+    z-index: -1;
+    visibility: hidden;
+}
+
+
+.container{
+    margin:10em auto 10em auto; 
+    background-color:rgb(255, 255, 255);
+}
+
+.second-row{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.main-header{
+    font-family: "Gotham Bold";
+    border:15% 0%;
+    color:rgb(29, 29, 78);
+    text-align: center;
+}
+
+.main-button{
+    font-family: "Gotham Bold";
+    width:100%;
+    height:100%;
+    justify-content: center;
+    color:white;
+    background-color:rgb(29, 29, 78);
+}
+
+.main-button-second{
+    font-family: "Gotham Bold";
+    width:100%;
+    height:100%;
+    justify-content: center;
+    color:white;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+.flip-card{
+    background-color: transparent;
+    width: 100%;
+    height:100%;
+    margin:auto;
+    perspective: 1000px;
+    
+}
+
+
+.flip-card-inner, .flip-card-inner-second{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition:  0.8s;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+ .flip-card:hover .flip-card-inner{
+    
+    transform: rotateX(180deg);
+
+
+}
+
+.flip-card:hover .flip-card-inner-second{
+    
+    transform: rotateX(-180deg);
+
+}
+
+.flip-card-front{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    
+}
+
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+
+}
+
+
+.flip-card-back {
+    transform: rotateX(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(29, 29, 78);
+    color:white;
+}
