@@ -226,7 +226,7 @@ article .container-fluid .pb-container {
 
 /*--- LOGGED IN BUTTON ---*/
 
-#btn-logout {
+.logged-in button {
     /* Button */
     margin-top: 2.5em;
     width: 100%;
@@ -243,7 +243,7 @@ article .container-fluid .pb-container {
     transition: 0.5s;
 }
 
-#btn-logout:hover {
+.logged-in button:hover {
     background-color: #0D576E;
 }
 
